@@ -6,4 +6,4 @@ that you can read to further understand the assignment.
 
 ## Current Assignments
 
-- Assignment 1
+- [Assignment 1](https://github.com/Struck713/OSLabs/tree/master/Assignment%201)
