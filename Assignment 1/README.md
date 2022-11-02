@@ -38,11 +38,11 @@ Consumer recieved item on 1: j
 [2]+  Done                    ./consumer
 ```
 
-# Explaination
+## Explaination
 Since the producer is executed first, it creates the shared memory object and then sets up the semaphores on that shared memory object. It then enters a while loop and waits for the wait semaphore to be activated by the consumer. Once the consumer posts to the wait semaphore, we know that we can produce some data for it to consume. As it produces and consumes data, we go back and forth on the semaphores in the while loop, trading off and passing data back and forth between the buffer in the shared memory space. The semaphores act as locks and protect the critical section from being accessed by two processes at once.
 
-# Problems
+## Problems
 The largest problem I faced with this assignment was actually understanding how the semaphores work in C and how dynamic memory works. I have never used a language like C, though I have used a very similar language, C++. It was a struggle at first to understand the syntax and how the semaphores work but once I got the hang of it, it really started to come together.
 
-# Lessons
+## Lessons
 The largest lesson I learned when doing this lab was actually using C. I have never used it but it was a blast to use and I will definitely be doing the other labs in C instead of something like C++.
